@@ -1,5 +1,6 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const route = require('./api/routes/routes')
 //const radis = require('radis')
 
 const PORT = process.env.PORT || 5000;
@@ -7,6 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 //const client = radis.createClient(RADIS_PORT);
 const app = express();
+//route(app);
 
 async function getRepos(req,res,next) {
   try {
