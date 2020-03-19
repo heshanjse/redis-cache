@@ -1,6 +1,5 @@
 const express = require('express');
 const fetch = require('node-fetch');
-const route = require('./api/routes/routes')
 //const radis = require('radis')
 
 const PORT = process.env.PORT || 5000;
